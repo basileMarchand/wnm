@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+
+from wnm import WNMConfigLoader, NotesManager, WNMApplication
+
+from PyQt5.QtWidgets import QApplication
+import sys
+
+nm = NotesManager()
+if nm.config_exists():
+    nm.load_config()
+else:
+    nm.initialize_config()
+    nm.load_config()
+    nm.compileHtml()
+ 
+
+app = QApplication(sys.argv)
+wnm = WNMApplication( nm )
+wnm.initUI()
+wnm.show()
+sys.exit(app.exec_())
+
+
+
+
+
+
+
+
+
+
+
+
+
