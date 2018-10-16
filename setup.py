@@ -43,7 +43,7 @@ setup(
         'Framework :: Sphinx, Qt'
     ],
     install_requires=["pyqt5",
-                      "sphinx",
+                      "sphinx>=1.8.1",
                       "traitlets",
                       "pyyaml"],
     scripts=['bin/wnm',],
