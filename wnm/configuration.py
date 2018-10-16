@@ -60,7 +60,7 @@ _DEFAULT_CONFIG = {
         "data_path": "~/.local/wnm/sources",
         "build_path": "~/.local/wnm/build",
         "name": "Working Notes Manager",
-        "editor": "internal"},
+        "editor": "env"},
     "sphinx": {
         "theme": "sphinx_rd_theme",
         "logo": "~/.local/wnm/logo.png"
