@@ -39,6 +39,7 @@ class NotesManager:
     def listCategory(self):
         list_dirs = os.listdir( self._config.manager.notes[self._nb_name].data )
         list_category = [ f[len("category_"):] for f in list_dirs if f[:len("category_")] == "category_" ]
+        list_category.remove("help")   ## To avoid new notes in the help category
         return list_category
 
     def listNotes(self):
