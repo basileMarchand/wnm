@@ -42,7 +42,7 @@ setup(
         'Natural Language :: English',
         'Framework :: Sphinx, Qt'
     ],
-    install_requires=["pyqt5",
+    install_requires=["pyqt>=5.*",
                       "sphinx>=1.8.1",
                       "traitlets",
                       "pyyaml"],
