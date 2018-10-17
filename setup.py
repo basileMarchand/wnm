@@ -32,7 +32,7 @@ setup(
     author_email = contact,
     description='',
     long_description=long_description,
-    license='LGPL',
+    license='LGPL V3',
     url="",
     classifiers=[
         'Programming Language :: Python :: 2',
@@ -44,6 +44,7 @@ setup(
     ],
     install_requires=["pyqt>=5.*",
                       "sphinx>=1.8.1",
+                      "sphinx_rtd_theme",
                       "traitlets",
                       "pyyaml"],
     scripts=['bin/wnm',],
